@@ -4,8 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "kumol",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jest": "^28.1.2",
+    "mongoose": "^6.4.3"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^3.0.2"
+  }
 }
