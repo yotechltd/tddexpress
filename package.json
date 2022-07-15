@@ -5,11 +5,13 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon --trace-warnings app.js",
-    "test": "jest"
+    "deb" : "node app.js",
+    "test": "jest --watch"
   },
   "author": "kumol",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "jest": "^28.1.2",
@@ -17,6 +19,7 @@
     "nodemon": "^2.0.19"
   },
   "devDependencies": {
-    "@shelf/jest-mongodb": "^3.0.2"
+    "@shelf/jest-mongodb": "^3.0.2",
+    "supertest": "^6.2.4"
   }
 }
